@@ -1,11 +1,12 @@
 let open = document.getElementById("open"); // open button
 let modal = document.getElementById("modalWindow"); // modal content
 let close = document.getElementById("close"); // close button
+let bg; // A variable for overlay
 
 // Function to show modal
 function show() {
     // Add background overlay when a modal is appeared
-    var bg = document.createElement("div");
+    bg = document.createElement("div");
     bg.setAttribute("id", "overLay");
     document.body.append(bg);
     // Add style for modal
