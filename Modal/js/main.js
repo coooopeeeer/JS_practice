@@ -13,6 +13,8 @@ function show() {
     modal.style.display = "block";
     // Remove background overlay when a background is clicked
     bg.addEventListener("click", hide);
+    // Make the modal center
+    center(modal);
 }
 
 // Function to hide modal
@@ -21,6 +23,19 @@ function hide() {
     bg.remove();
     // Remove modal
     modal.style.display = "none";
+}
+
+// Function to make the modal center
+function center(element) {
+    // Get height as px with padding
+    let height = element.clientHeight;
+    // Get width as px with padding
+    let width = element.clientWidth;
+    // Add styles for center
+    element.style.top = "50%";
+    element.style.left = "50%";
+    element.style.marginTop = "-" + (height / 2) + "px";
+    element.style.marginLeft = "-" + (width / 2) + "px";
 }
 
 open.addEventListener("click", show);
