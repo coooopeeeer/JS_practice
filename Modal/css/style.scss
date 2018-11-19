@@ -6,6 +6,8 @@ body, section, div, h1, h2, h3, h4, h5, h6, p, a, span {
 }
 
 body {
+    color: #333;
+    font-size: 15px;
     padding-top: 200px;
     text-align: center;
     background: #FFD464;
@@ -20,24 +22,30 @@ body {
     border-radius: 5px;
     background: #F26964;
     cursor: pointer;
-}
-
-#open:hover {
-    background: #da5e59;
+    &:hover {
+        background: #da5e59;
+    }
 }
 
 // modal content
 #modalWindow {
-    width: 80%;
-    height: 300px;
-    background: #fff;
+    width: 50%;
+    border-radius: 5px;
+    background: #f0f0f0;
     display: none;
     position: absolute;
     z-index: 101;
-    #close {
-        position: absolute;
-        top: 10px;
-        right: 10px;
+    #modalHeader {
+        padding: 20px 0;
+        border-bottom: 1px solid #ccc;
+        #close {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+    }
+    .modalBody {
+        padding: 100px;
     }
 }
 
