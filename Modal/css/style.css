@@ -41,8 +41,11 @@ body {
   border: none;
   background: none;
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: 20px;
+  right: 20px;
+}
+#modalWindow #modalHeader #close img {
+  width: 30px;
 }
 #modalWindow .modalBody {
   padding: 100px;
