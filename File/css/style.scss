@@ -1,0 +1,41 @@
+@charset "utf-8";
+
+body,
+section,
+div,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+span {
+  margin: 0px;
+  padding: 0px;
+}
+
+// drag & drop content
+#dropArea {
+  width: 80%;
+  min-height: 300px;
+  margin: 200px auto 0;
+  text-align: center;
+  border: 1px dashed #ddd;
+  background: #eee;
+  // styles to make the child contents center
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#fileList {
+  list-style: none;
+  //display: flex;
+  //justify-content: center;
+  li {
+    display: inline-block;
+    margin: 0 10px;
+  }
+}
