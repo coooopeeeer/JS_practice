@@ -20,3 +20,4 @@ function dropEvent() {
 }
 
 drop_area.addEventListener("dragover", overEvent);
+drop_area.addEventListener("dragleave", leaveEvent);
