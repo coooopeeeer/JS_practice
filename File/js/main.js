@@ -9,4 +9,14 @@ function overEvent(e) {
     e.dataTransfer.dropEffect = "move";
 }
 
+// Function after the file leaves the area
+function leaveEvent() {
+    drop_area.style.backgroundColor = "#eee";
+}
+
+// Function when the file is dropped
+function dropEvent() {
+
+}
+
 drop_area.addEventListener("dragover", overEvent);
