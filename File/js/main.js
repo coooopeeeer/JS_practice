@@ -4,7 +4,7 @@ let file_list = document.getElementById("fileList");
 
 // Function while the file covers the area
 function overEvent(e) {
-    drop_area.style.backgroundColor = "ddd";
+    drop_area.style.backgroundColor = "#ccc";
     e.preventDefault();
     e.dataTransfer.dropEffect = "move";
 }
