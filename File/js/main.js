@@ -15,8 +15,8 @@ function leaveEvent() {
 }
 
 // Function when the file is dropped
-function dropEvent() {
-
+function dropEvent(e) {
+    e.preventDefault();
 }
 
 drop_area.addEventListener("dragover", overEvent);
